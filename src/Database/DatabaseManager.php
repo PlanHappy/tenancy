@@ -79,8 +79,6 @@ class DatabaseManager
         if (array_key_exists('tenant', $this->database->getConnections())) {
             $this->database->purge('tenant');
         }
-
-        unset($this->config['database.connections.tenant']);
     }
 
     /**
